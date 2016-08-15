@@ -1,12 +1,10 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 
 /**
  * Register the theme custom post type
@@ -14,9 +12,9 @@
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  */
 function theme_custom_post_type() {
-    
+
     //NOTICIAS
-    $labels = array(        
+    $labels = array(
         'name' => 'Notícias',
         'singular_name' => 'Notícias',
         'menu_name' => 'Notícia',
@@ -47,20 +45,19 @@ function theme_custom_post_type() {
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => 5,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'trackbacks', 'revisions', 'page-attributes', 'post-formats' )
+        'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'trackbacks', 'revisions', 'page-attributes', 'post-formats')
             //'taxonomies' => array('category')
 //        'taxonomies' => array('category', 'post_tag')
     );
 
     register_post_type('noticias', $args);
     //NOTICIAS - END
-    
     //Artigos
     $labels = array(
         'name' => 'Artigos',
         'singular_name' => 'Artigos',
-        'menu_name' => 'Artigos',
-        'name_admin_bar' => 'Artigos',
+        'menu_name' => 'Artigos científicos',
+        'name_admin_bar' => 'Artigos científicos',
         'add_new' => 'Novo artigo',
         'add_new_item' => 'Novo artigo',
         'new_item' => 'Novo artigo',
@@ -87,15 +84,13 @@ function theme_custom_post_type() {
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => 5,
-        'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+        'supports' => array('title', 'editor', 'thumbnail', 'page-attributes', 'custom-fields'),
             //'taxonomies' => array('category')
 //        'taxonomies' => array('category', 'post_tag')
     );
 
     register_post_type('artigos', $args);
     //Artigos - END
-    
-    
     //Mídia
     $labels = array(
         'name' => 'Divulgação na mídia',
@@ -121,22 +116,20 @@ function theme_custom_post_type() {
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
-        'menu_icon' => 'dashicons-visibility',
+        'menu_icon' => 'dashicons-megaphone',
         'query_var' => true,
         'rewrite' => array('slug' => 'divulgacao-midia'),
         'capability_type' => 'post',
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => 5,
-        'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+        'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields', 'comments', 'trackbacks', 'revisions', 'page-attributes', 'post-formats')
             //'taxonomies' => array('category')
 //        'taxonomies' => array('category', 'post_tag')
     );
 
     register_post_type('divulgacao-midia', $args);
     //Mídia - END
-    
-    
     //Equipe
     $labels = array(
         'name' => 'Equipe',
@@ -176,6 +169,87 @@ function theme_custom_post_type() {
 
     register_post_type('equipe', $args);
     //Equipe - END
+    //Expedicoes
+    $labels = array(
+        'name' => 'Expedição',
+        'singular_name' => 'Expedição',
+        'menu_name' => 'Expedições',
+        'name_admin_bar' => 'Expedições',
+        'add_new' => 'Nova expedição',
+        'add_new_item' => 'Nova expedição',
+        'new_item' => 'Nova expedição',
+        'edit_item' => 'Editar',
+        'view_item' => 'Ver',
+        'all_items' => 'Todas',
+        'search_items' => 'Buscar',
+        'parent_item_colon' => 'Expedições',
+        'not_found' => 'Expedição não localizada.',
+        'not_found_in_trash' => 'Expedição não localizada no lixo.'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'description' => __('Description.', 'your-plugin-textdomain'),
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-admin-site',
+        'query_var' => true,
+        'rewrite' => array('slug' => 'expedicao'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+            //'taxonomies' => array('category')
+//        'taxonomies' => array('category', 'post_tag')
+    );
+
+    register_post_type('expedicao', $args);
+    //Expedicoes - END
+    
+    
+    
+    //PROJETOS
+    $labels = array(
+        'name' => 'Projetos',
+        'singular_name' => 'Projeto',
+        'menu_name' => 'Projetos em execução',
+        'name_admin_bar' => 'Projetos em execução',
+        'add_new' => 'Novo projeto',
+        'add_new_item' => 'Novo',
+        'new_item' => 'Novo projeto',
+        'edit_item' => 'Editar',
+        'view_item' => 'Ver',
+        'all_items' => 'Todos',
+        'search_items' => 'Buscar',
+        'parent_item_colon' => 'Projetos',
+        'not_found' => 'Projeto não localizado.',
+        'not_found_in_trash' => 'Projeto não localizado no lixo.'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'description' => __('Description.', 'your-plugin-textdomain'),
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-clipboard',
+        'query_var' => true,
+        'rewrite' => array('slug' => 'projetos-em-execucao'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'trackbacks', 'revisions', 'page-attributes', 'custom-fields')
+            //'taxonomies' => array('category')
+//        'taxonomies' => array('category', 'post_tag')
+    );
+
+    register_post_type('projetos-em-execucao', $args);
+    //PROJETOS - END
     
 }
 

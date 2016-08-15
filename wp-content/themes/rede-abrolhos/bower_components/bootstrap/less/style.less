@@ -283,7 +283,7 @@ p{
 
 
 
-.single{
+.unica{
 
     .galeria-fotos{
         padding-top: 60px;
@@ -503,119 +503,6 @@ p{
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-footer{    
-    margin-top: 270px;
-
-    h3{
-        .titulo-footer;
-    }
-
-    p, a{
-        color: @branco-fundo;
-        .texto-footer; 
-        padding-bottom: 18px;
-        img{
-            width: 35px;
-            height: auto;
-            padding-right: 5px;
-        }
-    }
-
-    a{
-        cursor: pointer;
-
-        &:hover{
-            text-decoration: none;
-        }
-    }
-
-
-
-    /*--------------------------------------------------------------
-    ## Faixa verde bootom
-    --------------------------------------------------------------*/
-    #faxa-verde-bottom{
-        background-color: @verde-escuro;
-        padding-top: 45px;
-        padding-bottom:(45px-18px);
-
-    }
-
-    #faixa-branca-bottom{
-
-        .rede{
-            padding-top: 30px;
-            .caixa-image{
-                float: left;
-                img{
-                    height: 65px;
-                    width: auto;
-                }
-            }
-            .caixa-txt{
-                float: left;
-                padding-top: 15px;
-                padding-left: 30px;
-
-                p{
-                    font-size: 13px;
-                    line-height: 17px;
-                    text-align: left;
-                    margin: 0;
-                    padding: 0;
-
-                }
-
-            }
-        }
-
-        .logos {
-
-            ul {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                text-align: center;
-
-                li {
-                    display: inline;
-                    list-style-type: none;
-                    padding: 0 20px;                    
-                    img{
-                        height: 45px;
-                        margin-top: 30px;                        
-                        margin-bottom: 30px;                        
-                    }
-                }
-            }
-        }
-
-        p{
-            .texto-footer-branco;
-            padding-top: 30px;
-            text-align: center;
-        }
-    }
-
-    #faixa-verde-bottom-2{
-        background-color: @verde-escuro;
-
-        p{
-            .texto-footer-branco;
-            color: @branco-fundo;
-            padding: 15px 0;
-            text-align: center;
-        }
-    }
-}
-
-
-.sombra-coluna{
-
-}
 
 
 
@@ -786,6 +673,10 @@ footer{
     }
     p{
         .texto-corrido;
+        
+        a{
+            color: @verde-claro;
+        }
     }
 
 }
@@ -1228,7 +1119,7 @@ footer{
     }
 
     hr{
-        padding-bottom: 30px;
+        margin-bottom: 30px;
         border-top-color: @verde-claro;
     }
 
@@ -1261,6 +1152,7 @@ footer{
 
             a{
                 .texto-corrido;
+                text-transform: capitalize;
 
             }
 
@@ -1360,4 +1252,122 @@ footer{
 }
 .blueimp-gallery-controls > .description {
     display: block;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer{    
+    margin-top: 270px;
+
+    h3{
+        .titulo-footer;
+    }
+
+    p, a{
+        color: @branco-fundo;
+        .texto-footer; 
+        padding-bottom: 18px;
+        img{
+            width: 35px;
+            height: auto;
+            padding-right: 5px;
+        }
+    }
+
+    a{
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+
+
+    /*--------------------------------------------------------------
+    ## Faixa verde bootom
+    --------------------------------------------------------------*/
+    #faxa-verde-bottom{
+        background-color: @verde-escuro;
+        padding-top: 45px;
+        padding-bottom:(45px-18px);
+
+    }
+
+    #faixa-branca-bottom{
+
+        .rede{
+            padding-top: 30px;
+            .caixa-image{
+                float: left;
+                img{
+                    height: 65px;
+                    width: auto;
+                }
+            }
+            .caixa-txt{
+                float: left;
+                padding-top: 15px;
+                padding-left: 30px;
+
+                p{
+                    font-size: 13px;
+                    line-height: 17px;
+                    text-align: left;
+                    margin: 0;
+                    padding: 0;
+
+                }
+
+            }
+        }
+
+        .logos {
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+
+                li {
+                    display: inline;
+                    list-style-type: none;
+                    padding: 0 20px;                    
+                    img{
+                        height: 45px;
+                        margin-top: 30px;                        
+                        margin-bottom: 30px;                        
+                    }
+                }
+            }
+        }
+
+        p{
+            .texto-footer-branco;
+            padding-top: 30px;
+            text-align: center;
+        }
+    }
+
+    #faixa-verde-bottom-2{
+        background-color: @verde-escuro;
+
+        p{
+            .texto-footer-branco;
+            color: @branco-fundo;
+            padding: 15px 0;
+            text-align: center;
+        }
+    }
+}
+
+
+.sombra-coluna{
+
 }

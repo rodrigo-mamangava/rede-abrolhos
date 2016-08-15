@@ -6968,10 +6968,10 @@ p {
   display: inline;
   list-style-type: none;
 }
-.single .galeria-fotos {
+.unica .galeria-fotos {
   padding-top: 60px;
 }
-.single h1 {
+.unica h1 {
   color: #006d46;
   font-size: 34px;
   font-size: 3.4rem;
@@ -6981,13 +6981,13 @@ p {
   padding-top: 60px;
   padding-bottom: 0;
 }
-.single img.destaque {
+.unica img.destaque {
   display: block;
   max-width: 100%;
   height: auto;
   border-top: solid 7px #7fcb44;
 }
-.single h2 {
+.unica h2 {
   color: #006d46;
   font-size: 34px;
   font-size: 3.4rem;
@@ -6997,11 +6997,11 @@ p {
   padding-top: 0px;
   padding-bottom: 30px;
 }
-.single h3 {
+.unica h3 {
   color: #7fcb44;
   padding-top: 60px;
 }
-.single p {
+.unica p {
   color: #6f6f6e;
   font-size: 22.5px;
   font-size: 2.25rem;
@@ -7009,19 +7009,19 @@ p {
   font-weight: 300;
   padding-top: 30px;
 }
-.single ol,
-.single ul {
+.unica ol,
+.unica ul {
   padding-left: 23px;
 }
-.single ol li,
-.single ul li {
+.unica ol li,
+.unica ul li {
   color: #6f6f6e;
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
   font-weight: 300;
 }
-.single hr {
+.unica hr {
   margin-top: 75px;
   margin-bottom: 45px;
   border-top-color: #7fcb44;
@@ -7269,104 +7269,6 @@ fieldset[disabled] .btn-saiba-mais.focus {
   }
 }
 /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-footer {
-  margin-top: 270px;
-  /*--------------------------------------------------------------
-    ## Faixa verde bootom
-    --------------------------------------------------------------*/
-}
-footer h3 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  color: #f9f9f9;
-  font-weight: bold;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-footer p,
-footer a {
-  font-size: 18px;
-  font-size: 1.8rem;
-  color: #f9f9f9;
-  line-height: 18px;
-  padding-bottom: 18px;
-}
-footer p img,
-footer a img {
-  width: 35px;
-  height: auto;
-  padding-right: 5px;
-}
-footer a {
-  cursor: pointer;
-}
-footer a:hover {
-  text-decoration: none;
-}
-footer #faxa-verde-bottom {
-  background-color: #006d46;
-  padding-top: 45px;
-  padding-bottom: 27px;
-}
-footer #faixa-branca-bottom .rede {
-  padding-top: 30px;
-}
-footer #faixa-branca-bottom .rede .caixa-image {
-  float: left;
-}
-footer #faixa-branca-bottom .rede .caixa-image img {
-  height: 65px;
-  width: auto;
-}
-footer #faixa-branca-bottom .rede .caixa-txt {
-  float: left;
-  padding-top: 15px;
-  padding-left: 30px;
-}
-footer #faixa-branca-bottom .rede .caixa-txt p {
-  font-size: 13px;
-  line-height: 17px;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-footer #faixa-branca-bottom .logos ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-}
-footer #faixa-branca-bottom .logos ul li {
-  display: inline;
-  list-style-type: none;
-  padding: 0 20px;
-}
-footer #faixa-branca-bottom .logos ul li img {
-  height: 45px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-footer #faixa-branca-bottom p {
-  font-size: 13px;
-  font-size: 1.3rem;
-  color: #006d46;
-  padding-top: 30px;
-  text-align: center;
-}
-footer #faixa-verde-bottom-2 {
-  background-color: #006d46;
-}
-footer #faixa-verde-bottom-2 p {
-  font-size: 13px;
-  font-size: 1.3rem;
-  color: #006d46;
-  color: #f9f9f9;
-  padding: 15px 0;
-  text-align: center;
-}
-/*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
@@ -7556,6 +7458,9 @@ footer #faixa-verde-bottom-2 p {
   font-size: 2.25rem;
   line-height: 40px;
   font-weight: 300;
+}
+#publicacoes p a {
+  color: #7fcb44;
 }
 /*--------------------------------------------------------------
 ### Noticias
@@ -7976,7 +7881,7 @@ footer #faixa-verde-bottom-2 p {
   padding-bottom: 30px;
 }
 #expedicoes hr {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   border-top-color: #7fcb44;
 }
 #expedicoes p {
@@ -8024,6 +7929,7 @@ footer #faixa-verde-bottom-2 p {
   font-size: 2.25rem;
   line-height: 40px;
   font-weight: 300;
+  text-transform: capitalize;
 }
 #expedicoes ul li:before {
   content: ".";
@@ -8107,4 +8013,102 @@ footer #faixa-verde-bottom-2 p {
 }
 .blueimp-gallery-controls > .description {
   display: block;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  margin-top: 270px;
+  /*--------------------------------------------------------------
+    ## Faixa verde bootom
+    --------------------------------------------------------------*/
+}
+footer h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #f9f9f9;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+footer p,
+footer a {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #f9f9f9;
+  line-height: 18px;
+  padding-bottom: 18px;
+}
+footer p img,
+footer a img {
+  width: 35px;
+  height: auto;
+  padding-right: 5px;
+}
+footer a {
+  cursor: pointer;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer #faxa-verde-bottom {
+  background-color: #006d46;
+  padding-top: 45px;
+  padding-bottom: 27px;
+}
+footer #faixa-branca-bottom .rede {
+  padding-top: 30px;
+}
+footer #faixa-branca-bottom .rede .caixa-image {
+  float: left;
+}
+footer #faixa-branca-bottom .rede .caixa-image img {
+  height: 65px;
+  width: auto;
+}
+footer #faixa-branca-bottom .rede .caixa-txt {
+  float: left;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+footer #faixa-branca-bottom .rede .caixa-txt p {
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+footer #faixa-branca-bottom .logos ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+footer #faixa-branca-bottom .logos ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 20px;
+}
+footer #faixa-branca-bottom .logos ul li img {
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer #faixa-branca-bottom p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #006d46;
+  padding-top: 30px;
+  text-align: center;
+}
+footer #faixa-verde-bottom-2 {
+  background-color: #006d46;
+}
+footer #faixa-verde-bottom-2 p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #006d46;
+  color: #f9f9f9;
+  padding: 15px 0;
+  text-align: center;
 }

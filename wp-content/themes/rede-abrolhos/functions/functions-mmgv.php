@@ -1,5 +1,4 @@
 <?php
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -60,11 +59,47 @@ function get_excerpt($count) {
         return get_the_excerpt();
     } else {
         $permalink = get_permalink($post->ID);
-        $excerpt = get_the_content();
+        $excerpt = get_the_excerpt();
         $excerpt = strip_tags($excerpt);
         $excerpt = substr($excerpt, 0, $count);
         $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
         $excerpt = $excerpt . '[...]';
         return $excerpt;
     }
+}
+
+function get_expedicoes_by_year($ano) {
+    $args = array(
+        'post_type' => 'expedicao',
+        'year' => $ano,
+        'order' => 'ASC',
+        'orderby' => 'date',
+    );
+
+    $the_query = new WP_Query($args);
+
+    // The Loop
+    if ($the_query->have_posts()) :
+        ?>
+        <div class="expedicoes-item">
+            <div class="row">
+                <div class="col-xs-2 col-sm-1">
+                    <h3>
+                        <?php echo $ano ?>
+                    </h3>
+
+                </div>
+                <div class="col-xs-10 col-sm-11">
+                    <ul>
+                        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                            <li><a href="<?php the_permalink(); ?>"><?php echo get_the_date('F'); ?></a></li>
+                        <?php endwhile; ?>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- .expedicoes-item -->
+        <?php
+    endif;
+
+    wp_reset_postdata();
 }

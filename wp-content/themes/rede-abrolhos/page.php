@@ -11,28 +11,30 @@
  *
  * @package rede-abrolhos
  */
+get_header();
+?>
 
-get_header(); ?>
+<div id="publicacoes" <?php post_class(); ?> >
+    <div class="container">
+        <div class="row"> 
+            <div class="col-xs-12">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+                <?php
+                while (have_posts()) : the_post();
 
-			<?php
-			while ( have_posts() ) : the_post();
+                    the_title('<h1>', '</h1>');
 
-				get_template_part( 'template-parts/content', 'page' );
+                    the_content();
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+                endwhile;
+                ?>
 
-			endwhile; // End of the loop.
-			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
+            </div>
+        </div>
+    </div>
+</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
