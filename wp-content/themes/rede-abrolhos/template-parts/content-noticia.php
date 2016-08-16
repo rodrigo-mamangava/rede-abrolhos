@@ -1,5 +1,5 @@
 
-<article id="noticia-single post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="noticia-single post-<?php the_ID(); ?>" <?php post_class('unica'); ?>>
 
     <div class="container">
         <div class="row">

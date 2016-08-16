@@ -27,17 +27,7 @@ $countSlide = 0;
         <!-- Indicators -->
 
 
-        <ol class="carousel-indicators">
 
-            <?php if ($the_query->have_posts()) : ?>
-                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <li data-target="#carousel-home" data-slide-to="<?php echo $countBollet ?>" class="<?php echo ($countBollet == 0) ? 'active' : '' ?>"></li>
-                    <?php $countBollet++; ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-
-
-        </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -47,7 +37,7 @@ $countSlide = 0;
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
                     <div class="item <?php echo ($countSlide == 0) ? 'active' : ''; ?>">
-                        <img src="<?php the_post_thumbnail_url(); ?>" alt="...">
+                        <img src="<?php the_post_thumbnail_url('vitrine-noticia'); ?>" alt="...">
                         <div class="carousel-texto">
                             <div class="container">
                                 <div class="row">
@@ -66,12 +56,25 @@ $countSlide = 0;
                 <?php endwhile; ?>
 
             <?php endif; ?>
-
-
-
-
-
         </div>
+
+
+        <div class="container vitrine">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ol class="carousel-indicators">
+                        <?php if ($the_query->have_posts()) : ?>
+                            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                <li data-target="#carousel-home" data-slide-to="<?php echo $countBollet ?>" class="<?php echo ($countBollet == 0) ? 'active' : '' ?>"></li>
+                                <?php $countBollet++; ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 

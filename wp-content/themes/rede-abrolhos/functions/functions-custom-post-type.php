@@ -258,60 +258,35 @@ add_action('init', 'theme_custom_post_type');
 
 /* Custom Taxonomies */
 
-//function theme_custom_category() {
-//
-//    //Áreas de pesquisa
-//    $labels = array(
-//        'name' => 'Tipo de botão',
-//        'singular_name' => 'Tipo de botão',
-//        'search_items' => 'Buscar',
-//        'all_items' => 'Todos',
-//        'parent_item' => __('Parent'),
-//        'parent_item_colon' => __('Parent:'),
-//        'edit_item' => 'Editar',
-//        'update_item' => 'Editar',
-//        'add_new_item' => 'Adicionar novo tipo de botão',
-//        'new_item_name' => 'Novo tipo de botão',
-//        'menu_name' => __('Tipo de botão'),
-//    );
-//
-//    $args = array(
-//        'hierarchical' => true,
-//        'labels' => $labels,
-//        'show_ui' => true,
-//        'show_admin_column' => true,
-//        'query_var' => true,
-//        'rewrite' => array('slug' => 'tipo-botao'),
-//    );
-//
-//    register_taxonomy('tipo-botao', array('botao-home'), $args);
-//    //end - Áreas de pesquisa
-//    //Áreas de pesquisa
-//    $labels = array(
-//        'name' => 'Tamanho do botão',
-//        'singular_name' => 'Tamanho do botão',
-//        'search_items' => 'Buscar',
-//        'all_items' => 'Todos',
-//        'parent_item' => __('Parent'),
-//        'parent_item_colon' => __('Parent:'),
-//        'edit_item' => 'Editar',
-//        'update_item' => 'Editar',
-//        'add_new_item' => 'Adicionar novo tamanho de botão',
-//        'new_item_name' => 'Novo tamanho de botão',
-//        'menu_name' => __('Tamanho do botão'),
-//    );
-//
-//    $args = array(
-//        'hierarchical' => true,
-//        'labels' => $labels,
-//        'show_ui' => true,
-//        'show_admin_column' => true,
-//        'query_var' => true,
-//        'rewrite' => array('slug' => 'tamanho-botao'),
-//    );
-//
-//    register_taxonomy('tamanho-botao', array('botao-home'), $args);
-//    //end - Áreas de pesquisa
-//}
-//
-//add_action('init', 'theme_custom_category');
+function theme_custom_category() {
+
+    //cargo
+    $labels = array(
+        'name' => 'Cargo',
+        'singular_name' => 'Cargo',
+        'search_items' => 'Buscar',
+        'all_items' => 'Todos',
+        'parent_item' => __('Parent'),
+        'parent_item_colon' => __('Parent:'),
+        'edit_item' => 'Editar',
+        'update_item' => 'Editar',
+        'add_new_item' => 'Adicionar novo cargo',
+        'new_item_name' => 'Novo cargo',
+        'menu_name' => __('Cargo'),
+    );
+
+    $args = array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'cargo'),
+    );
+
+    register_taxonomy('cargo', array('equipe'), $args);
+    //end - cargo
+    
+}
+
+add_action('init', 'theme_custom_category');
