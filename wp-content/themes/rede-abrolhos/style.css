@@ -7290,12 +7290,12 @@ fieldset[disabled] .btn-saiba-mais.focus {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em;
+  margin-right: 30px;
 }
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em;
+  margin-left: 30px;
 }
 .aligncenter {
   clear: both;
@@ -8161,10 +8161,12 @@ footer #faixa-verde-bottom-2 p {
   border-radius: 0!important;
   border-left: solid 40px white !important;
   border-right: solid 40px white !important;
+  border: 0!important;
 }
 .fbx-btn-transition {
   border-radius: 0!important;
   box-shadow: none!important;
+  display: none !important;
 }
 .fbx-item-current {
   border-radius: 0!important;
@@ -8178,6 +8180,12 @@ footer #faixa-verde-bottom-2 p {
   background-color: transparent!important;
   border: 0!important;
   box-shadow: none;
+}
+.fbx-light {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+.fbx-count {
+  display: none!important;
 }
 /*--------------------------------------------------------------
 ## Ajustes no Carousel
