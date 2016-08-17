@@ -28,15 +28,17 @@ get_header();
                         <div class="card-noticia">
                             <div class="row">
                                 <div  class="col-sm-6">
-                                    <?php the_post_thumbnail('thumb-noticia')?>
-                                    
+                                    <?php the_post_thumbnail('thumb-noticia') ?>
+
                                 </div>
                                 <div  class="col-sm-6">
-                                    <h2><?php the_title(); ?></h2>
-                                    <p>
-                                        <?php echo get_excerpt(180); ?>
-                                    </p>
-                                    <a href="<?php the_permalink(); ?>">Leia mais...</a>
+                                    <div class="card-noticia-texto">
+                                        <h2><?php the_title(); ?></h2>
+                                        <p>
+                                            <?php echo get_excerpt(180); ?>
+                                        </p>
+                                        <a href="<?php the_permalink(); ?>">Leia mais...</a>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--noticia-->

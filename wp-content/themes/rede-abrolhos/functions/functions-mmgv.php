@@ -47,7 +47,7 @@ add_action('admin_menu', 'remove_menus');
  * 
  */
 add_image_size('thumb-noticia', 570, 345);
-add_image_size('vitrine-noticia', 1920, 618, true);
+add_image_size('vitrine-noticia', 1440, 570, true);
 add_image_size('thumb-equipe', 170, 200, true);
 add_image_size('interno-equipe', 204, 240 , true);
 add_image_size('thumb-galeria', 279, 279 , true);
@@ -215,7 +215,7 @@ function get_equipe_executores() {
 
 function add_search_to_wp_menu($items, $args) {
     if ('primary' === $args->theme_location) {
-        $items .= '<li class="menu-item menu-item-search pull-right">';
+        $items .= '<li class="menu-item menu-item-search">';
         $items .= '<form '
                 . 'method="get" '
                 . 'class="search-form-rede" '
