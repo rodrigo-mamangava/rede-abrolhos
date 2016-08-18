@@ -22,7 +22,7 @@ get_header();
 
         <div class="row">
             <div class="col-xs-12">
-                <h2>Coordenadores</h2>
+                <h2>Coordenação</h2>
             </div>
         </div>
 
@@ -34,7 +34,7 @@ get_header();
 
         <div class="row">
             <div class="col-xs-12">
-                <h2>Executores</h2>
+                <h2 class="ajuste-h2" >Executores</h2>
             </div>
         </div>
 

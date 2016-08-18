@@ -12,7 +12,7 @@
 
 
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon " class="site-footer footer-expedicao" role="contentinfo">
 
 <?php
 get_template_part('template-parts/footer/conteudo');

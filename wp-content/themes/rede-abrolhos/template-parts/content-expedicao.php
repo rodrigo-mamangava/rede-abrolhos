@@ -6,21 +6,11 @@
  */
 ?>
 
-<div id="expedicao-single" class="single">
+<h1>EXPEDIÇÃO <?php echo get_the_date('F Y'); ?>:</h1>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                
-                <h1>EXPEDIÇÃO <?php echo get_the_date('F Y'); ?>:</h1>
-                
-                <?php
-                
-                the_title('<h2>', '</h2>');
-                
-                the_content();
-                ?>
-            </div>
-        </div>
-    </div>
-</div><!-- #expedicao-single .single -->
+<?php
+the_title('<h2>', '</h2>');
+
+the_content();
+?>
+

@@ -91,5 +91,5 @@ get_header();
 </div><!-- #artigos -->
 
 <?php
-get_footer();
+get_footer('artigo');
 

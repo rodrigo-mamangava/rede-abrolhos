@@ -6899,14 +6899,13 @@ body {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .texto-corrido-variacao {
   color: #6f6f6e;
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
   font-weight: 400;
 }
 .texto-destaque {
@@ -6954,7 +6953,7 @@ p {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .card {
   position: relative;
@@ -6981,10 +6980,14 @@ p {
   font-size: 34px;
   font-size: 3.4rem;
   line-height: 40px;
-  text-transform: uppercase;
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
+  font-size: 37px;
+  font-size: 3.7rem;
+  line-height: 43px;
+  text-transform: uppercase;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .unica figure.aligncenter {
@@ -7001,7 +7004,7 @@ p {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 19px;
   line-height: 19px;
   text-align: left;
@@ -7029,7 +7032,7 @@ p {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 30px;
 }
 .unica ol,
@@ -7042,7 +7045,7 @@ p {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .unica hr {
   margin-top: 75px;
@@ -7511,7 +7514,6 @@ fieldset[disabled] .btn-saiba-mais.focus {
 #contato p {
   color: #6f6f6e;
   line-height: 40px;
-  font-weight: 300;
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 30px;
@@ -7563,7 +7565,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #rede a.btn-saiba-mais {
   display: inline-block;
@@ -7696,7 +7698,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-weight: 600;
   color: #7fcb44;
   padding-bottom: 37px;
@@ -7745,7 +7747,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #publicacoes p a {
   color: #7fcb44;
@@ -7814,7 +7816,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   font-size: 2.0rem;
   font-weight: 400px;
@@ -7829,7 +7831,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   font-size: 2.0rem;
   font-weight: 400px;
@@ -7867,8 +7869,6 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 #galeria h2 {
   color: #7fcb44;
@@ -7886,7 +7886,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 /*--------------------------------------------------------------
 ### Equipe
@@ -7900,27 +7900,32 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 #equipe h2 {
   color: #006d46;
   font-size: 34px;
   font-size: 3.4rem;
   line-height: 40px;
+  text-transform: uppercase;
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+  text-transform: initial;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+#equipe .ajuste-h2 {
+  margin-top: 24px;
 }
 #equipe p {
   color: #6f6f6e;
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
   padding: 15px 0;
 }
 #equipe p:first-of-type {
@@ -7936,21 +7941,33 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   border-top: 5px solid #7fcb44;
   margin-bottom: 60px;
   background-color: #ffffff;
+  margin-bottom: 30px;
   padding: 30px;
-  min-height: 520px;
+  min-height: 430px;
 }
 #equipe .card-equipe img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+#equipe .card-equipe .card-equipe-principal {
+  position: relative;
+}
+#equipe .card-equipe .card-equipe-principal .card-equipe-principal-foto {
+  float: left;
+}
+#equipe .card-equipe .card-equipe-principal .card-equipe-principal-texto {
+  float: left;
+  margin-left: 20px;
+  width: 50%;
+}
 #equipe .card-equipe h3 {
-  padding-top: 60px;
+  margin-top: 78px;
   font-size: 30px;
   font-size: 3rem;
-  line-height: 33px;
+  line-height: 31px;
+  font-weight: 600;
   color: #006d46;
-  margin-left: -15px;
 }
 @media (max-width: 767px) {
   #equipe .card-equipe h3 {
@@ -7958,11 +7975,11 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   }
 }
 #equipe .card-equipe h4 {
-  padding-top: 10px;
-  font-size: 24px;
-  font-size: 2.4rem;
+  padding-top: 7px;
+  font-size: 25px;
+  font-size: 2.5rem;
+  font-weight: 400;
   color: #6f6f6e;
-  margin-left: -15px;
 }
 /*--------------------------------------------------------------
 # equipe-single
@@ -7992,11 +8009,93 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   position: relative;
   border-top: 5px solid #7fcb44;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
+}
+#equipe-single .header-equipe .cv-principal {
+  position: relative;
+}
+#equipe-single .header-equipe .cv-principal .foto {
+  float: left;
+  margin-left: 30px;
+}
+#equipe-single .header-equipe .cv-principal .foto img {
+  width: 200px;
+  height: 235px;
+}
+#equipe-single .header-equipe .cv-principal .info {
+  float: left;
+  margin-left: 30px;
+}
+#equipe-single .header-equipe .cv-principal .info .caixa-texto {
+  position: relative;
+  min-height: 135px;
+}
+#equipe-single .header-equipe .cv-principal .info .caixa-texto .texto {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 500px;
+}
+#equipe-single .header-equipe .cv-principal .info h1 {
+  color: #006d46;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 7px;
+  text-transform: initial;
+}
+#equipe-single .header-equipe .cv-principal .info h2 {
+  color: #7fcb44;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+#equipe-single .header-equipe .cv-principal .info p {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
+}
+#equipe-single .header-equipe .cv-principal .info .links {
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  width: 100%;
+  padding-right: 30px;
+  right: 0;
+}
+@media (max-width: 991px) {
+  #equipe-single .header-equipe .cv-principal .info .links {
+    position: relative;
+    bottom: initial;
+    text-align: left;
+    padding-top: 15px;
+  }
+}
+#equipe-single .header-equipe .cv-principal .info .links a {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 35px;
+  color: #7fcb44;
 }
 #equipe-single .curriculo-equipe {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 26px 30px 41px;
   border-top: 1px solid #7fcb44;
 }
 #equipe-single h1 {
@@ -8019,11 +8118,13 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 2.5rem;
   line-height: 40px;
   font-weight: 400;
-  padding-bottom: 30px;
+  font-size: 27.5px;
+  line-height: 29px;
+  font-weight: 600;
+  padding-bottom: 23px;
 }
 #equipe-single h3 {
   font-size: 20px;
-  font-size: 2rem;
   line-height: 29px;
   font-weight: 400;
   color: #006d46;
@@ -8037,7 +8138,9 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
 }
 #equipe-single ul {
   list-style: none;
@@ -8063,27 +8166,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   line-height: 29px;
   font-weight: 600;
   color: #6f6f6e;
-}
-#equipe-single .links {
-  position: absolute;
-  bottom: 0;
-  text-align: right;
-  width: 100%;
-  padding-right: 45px;
-}
-@media (max-width: 991px) {
-  #equipe-single .links {
-    position: relative;
-    bottom: initial;
-    text-align: left;
-    padding-top: 15px;
-  }
-}
-#equipe-single .links a {
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 35px;
-  color: #7fcb44;
+  margin-bottom: 23px;
 }
 /*--------------------------------------------------------------
 # artigos
@@ -8097,21 +8180,20 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  /*        font-size: 31px;
-                font-size: 3.1rem;
-                line-height: 37px;
-                font-weight: @semi-bold;    */
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 49px;
 }
 #artigos h2 {
   color: #006d46;
-  padding-top: 60px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 40px;
 }
 #artigos h3 {
-  font-size: 23px;
-  font-size: 2.3rem;
-  line-height: 31px;
+  font-size: 22.5px;
+  font-size: 2.23rem;
+  line-height: 30px;
+  font-weight: 400;
   color: #7fcb44;
   padding-top: 15px;
 }
@@ -8120,10 +8202,12 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 }
 #artigos p {
   color: #6f6f6e;
-  font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-size: 22.5px;
+  font-size: 2.23rem;
+  line-height: 30px;
+  font-weight: 400;
 }
 #artigos ul {
   margin: 0;
@@ -8137,11 +8221,11 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 }
 #artigos ul {
   text-align: left;
-  padding-top: 90px;
-  padding-bottom: 30px;
+  margin-top: 85px;
+  margin-bottom: 40px;
 }
 #artigos ul li {
-  padding: 0 10px;
+  padding: 0 20px 0 0;
 }
 #artigos ul li a {
   color: #7fcb44;
@@ -8154,6 +8238,9 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 }
 #artigos ul li a.active {
   color: #006d46;
+}
+.footer-artigo {
+  margin-top: 115px;
 }
 /*--------------------------------------------------------------
 # divulgacao
@@ -8170,36 +8257,41 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 49px;
 }
 #divulgacao .divulgacao-item {
   padding-bottom: 45px;
 }
 #divulgacao .divulgacao-item:first-of-type {
-  padding-top: 60px;
+  padding-top: 85px;
 }
 #divulgacao .divulgacao-item h2 {
   color: #006d46;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
 }
 #divulgacao .divulgacao-item h3 {
   color: #7fcb44;
-  font-size: 23px;
-  font-size: 2.3rem;
-  line-height: 31px;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 30px;
+  font-weight: 400;
 }
 #divulgacao .divulgacao-item p {
   color: #6f6f6e;
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
 }
 /*--------------------------------------------------------------
 # expedicoes
 --------------------------------------------------------------*/
 #expedicoes .faixa {
-  border-bottom: 5px solid #7fcb44;
+  border-bottom: 7px solid #7fcb44;
 }
 #expedicoes a:hover {
   text-decoration: none;
@@ -8213,11 +8305,10 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  margin-bottom: 23px;
 }
 #expedicoes hr {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   border-top-color: #7fcb44;
 }
 #expedicoes p {
@@ -8225,7 +8316,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #expedicoes h2 {
   color: #7fcb44;
@@ -8233,15 +8324,18 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 2.5rem;
   line-height: 40px;
   font-weight: 400;
+  font-weight: 600;
   color: #006d46;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  margin-top: 36px;
+  margin-bottom: 35px;
 }
 #expedicoes h3 {
-  font-size: 41px;
-  font-size: 4.1rem;
+  font-size: 34px;
+  font-size: 3.4rem;
   color: #7fcb44;
-  padding-bottom: 45px;
+  font-weight: 600;
+  margin-top: -2px;
+  margin-bottom: 35px;
 }
 #expedicoes ul {
   margin: 0;
@@ -8264,7 +8358,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: capitalize;
 }
 #expedicoes ul li:before {
@@ -8278,9 +8372,50 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   content: "";
   padding-right: 15px;
 }
+.footer-expedicao {
+  margin-top: 78px;
+}
 /*--------------------------------------------------------------
 # expedicao-single
 --------------------------------------------------------------*/
+#expedicao-single h1 {
+  margin-bottom: 0;
+}
+#expedicao-single h2 {
+  margin-top: 0;
+  font-size: 37px;
+  line-height: 43px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 0;
+  margin-bottom: 23px;
+}
+#expedicao-single h3 {
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: 400;
+  padding-top: 0;
+  margin-top: 55px;
+}
+#expedicao-single p {
+  padding-top: 0;
+  margin-top: 26px;
+}
+#expedicao-single hr {
+  margin-top: 70px;
+  margin-bottom: 71px;
+}
+#expedicao-single img.aligncenter {
+  border-top: solid 7px #7fcb44;
+}
+#expedicao-single .foogallery-container {
+  margin-top: 54px;
+}
+#expedicao-single ol,
+#expedicao-single ul {
+  padding-left: 0px;
+  margin-left: 20px;
+}
 /*--------------------------------------------------------------
 # noticia-single
 --------------------------------------------------------------*/
@@ -8306,7 +8441,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 45px;
 }
 /*--------------------------------------------------------------
@@ -8321,25 +8456,30 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 49px;
 }
 #projetos .projeto-item {
-  padding-bottom: 45px;
+  margin-bottom: 36px;
 }
 #projetos .projeto-item h2 {
   color: #7fcb44;
-  font-size: 25px;
   font-size: 2.5rem;
   line-height: 40px;
   font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
 }
 #projetos .projeto-item p {
   color: #6f6f6e;
-  font-size: 22.5px;
   font-size: 2.25rem;
   line-height: 40px;
-  font-weight: 300;
+  font-size: 22.5px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.footer-projetos {
+  margin-top: 79px;
 }
 /*--------------------------------------------------------------
 # blueimp-gallery

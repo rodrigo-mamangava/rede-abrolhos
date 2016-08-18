@@ -48,9 +48,9 @@ add_action('admin_menu', 'remove_menus');
  */
 add_image_size('thumb-noticia', 570, 345);
 add_image_size('vitrine-noticia', 1440, 570, true);
-add_image_size('thumb-equipe', 170, 200, true);
-add_image_size('interno-equipe', 204, 240 , true);
-add_image_size('thumb-galeria', 279, 279 , true);
+add_image_size('thumb-equipe', 160, 190, true);
+add_image_size('interno-equipe', 200, 235, true);
+add_image_size('thumb-galeria', 279, 279, true);
 
 /**
  * Retorna o excerpt com o numero determinado de caracteres
@@ -82,6 +82,10 @@ function get_expedicoes_by_year($ano) {
 
     $the_query = new WP_Query($args);
 
+
+//    $count = $the_query->post_count;
+//    
+//    debug($count);
     // The Loop
     if ($the_query->have_posts()) :
         ?>
@@ -136,17 +140,23 @@ function get_equipe_coordenadores() {
                 <a href="<?php the_permalink(); ?>">
                     <div class="card-equipe">
                         <div class="row">
-                            <div class="col-xs-5">
-                                <img src="<?php the_post_thumbnail_url('thumb-equipe'); ?>" >
+                            <div class="col-xs-12">
+                                <div class="card-equipe-principal">
+                                    <div class="card-equipe-principal-foto">
+                                        <img src="<?php the_post_thumbnail_url('thumb-equipe'); ?>" >
+                                    </div>
+                                    <div class="card-equipe-principal-texto">
+                                        <h3><?php echo get_the_title(); ?></h3>
+                                        <h4>Coordenação</h4>
+                                    </div>
+                                    <div class=""></div>
+                                </div>
                             </div>
-                            <div class="col-xs-7">
-                                <h3><?php echo get_the_title(); ?></h3>
-                                <h4>Coordenador</h4>
-                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <?php echo get_field( "resumo" )?>
+                                <?php echo get_field("resumo") ?>
                             </div>
                         </div>
                     </div>
@@ -188,16 +198,22 @@ function get_equipe_executores() {
                 <a href="<?php the_permalink(); ?>">
                     <div class="card-equipe">
                         <div class="row">
-                            <div class="col-xs-5">
-                                <img src="<?php the_post_thumbnail_url('thumb-equipe'); ?>" >
+                            <div class="col-xs-12">
+                                <div class="card-equipe-principal">
+                                    <div class="card-equipe-principal-foto">
+                                        <img src="<?php the_post_thumbnail_url('thumb-equipe'); ?>" >
+                                    </div>
+                                    <div class="card-equipe-principal-texto">
+                                        <h3><?php echo get_the_title(); ?></h3>
+                                    </div>
+                                    <div class=""></div>
+                                </div>
                             </div>
-                            <div class="col-xs-7">
-                                <h3><?php echo get_the_title(); ?></h3>
-                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <?php echo get_field( "resumo" )?>
+                                <?php echo get_field("resumo") ?>
                             </div>
                         </div>
                     </div>
@@ -210,8 +226,6 @@ function get_equipe_executores() {
     // Reset Post Data
     wp_reset_postdata();
 }
-
-
 
 function add_search_to_wp_menu($items, $args) {
     if ('primary' === $args->theme_location) {
@@ -237,3 +251,8 @@ function add_search_to_wp_menu($items, $args) {
 }
 
 add_filter('wp_nav_menu_items', 'add_search_to_wp_menu', 10, 2);
+
+function get_page_name() {
+    global $post;
+    return $post->post_name;
+}
