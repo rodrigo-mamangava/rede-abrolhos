@@ -14,7 +14,7 @@
 get_header();
 ?>
 
-<div id="publicacoes" <?php post_class(); ?> >
+<div id="page" <?php post_class(); ?> >
     <div class="container">
         <div class="row"> 
             <div class="col-xs-12">

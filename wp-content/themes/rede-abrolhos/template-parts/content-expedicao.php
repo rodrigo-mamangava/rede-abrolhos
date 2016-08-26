@@ -6,7 +6,7 @@
  */
 ?>
 
-<h1>EXPEDIÇÃO <?php echo get_the_date('F Y'); ?>:</h1>
+<h1>Expedição <span><?php echo get_the_date('F Y'); ?></span>:</h1>
 
 <?php
 the_title('<h2>', '</h2>');

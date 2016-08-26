@@ -28,13 +28,13 @@ get_header();
 
                     <ul class="social">
                         <li>
-                            <a><img src="<?php echo get_template_directory_uri() ?>/image/social/marca_FB_contato.png" >Facebook</a>
+                            <a><img  class="face" src="<?php echo get_template_directory_uri() ?>/image/social/marca_FB_contato.png" >Facebook</a>
                         </li>
                         <li>
-                            <a><img src="<?php echo get_template_directory_uri() ?>/image/social/marca_YT_contato.png">Youtube</a>
+                            <a><img class="you" src="<?php echo get_template_directory_uri() ?>/image/social/marca_YT_contato.png">Youtube</a>
                         </li>
                         <li>
-                            <a><img src="<?php echo get_template_directory_uri() ?>/image/social/marca_TT_contato.png">Twitter</a>
+                            <a><img class="twitter" src="<?php echo get_template_directory_uri() ?>/image/social/marca_TT_contato.png">Twitter</a>
                         </li>
                     </ul>
 

@@ -38,6 +38,17 @@ get_header();
                 ?>
             </div>
         </div>
+        
+        <div class="row">
+            <div class="col-xs-12">
+
+                    <?php 
+                    custom_pagination_mmgv(10);
+                    ?>
+
+            </div>
+        </div><!-- row -->
+        
     </div>
 </div><!-- #contato -->
 

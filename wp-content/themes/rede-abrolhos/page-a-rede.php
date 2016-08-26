@@ -24,4 +24,4 @@ get_header();
 </div><!-- #home-texto -->
 
 <?php
-get_footer();
+get_footer('a-rede');

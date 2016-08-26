@@ -1,4 +1,4 @@
-<?php get_template_part('template-parts/footer/menu', 'footer'); ?>
+<?php get_template_part('template-parts/footer/menu', 'footer-2'); ?>
 
 </footer><!-- #colophon -->
 

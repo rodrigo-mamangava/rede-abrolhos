@@ -8,7 +8,7 @@ get_header();
 <div id="home">
 
 
-    <?php get_template_part('template-parts/home/vitrine'); ?>
+    <?php get_template_part('template-parts/home/vitrine', 'cover'); ?>
 
 
     <div class="container">

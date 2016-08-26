@@ -33,7 +33,7 @@ get_header();
                                 </div>
                                 <div  class="col-sm-6">
                                     <div class="card-noticia-texto">
-                                        <h2><?php the_title(); ?></h2>
+                                        <h2><?php echo the_titlesmall('', '', false, 63)?></h2>
                                         <p>
                                             <?php echo get_excerpt(180); ?>
                                         </p>
@@ -47,7 +47,6 @@ get_header();
                     <?php endwhile; ?>
 
                     <?php
-                    the_posts_navigation();
 
                 else :
 
@@ -61,16 +60,11 @@ get_header();
 
         <div class="row">
             <div class="col-xs-12">
-                <div class="passador">
-                    <p>
-                        <span> < </span>
-                        <span> 1 </span>
-                        <span> 2 </span>
-                        <span> 3 </span>
-                        <span> 4 </span>
-                        <span> > </span>
-                    </p>
-                </div>
+
+                    <?php 
+                    custom_pagination_mmgv(10);
+                    ?>
+
             </div>
         </div><!-- row -->
 

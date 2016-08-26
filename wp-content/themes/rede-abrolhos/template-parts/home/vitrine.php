@@ -9,7 +9,7 @@
 <?php
 $args = array(
     'post_type' => 'noticias',
-    'order' => 'ASC',
+    'order' => 'DESC',
     'orderby' => 'date',
     'posts_per_page' => 3,
 );
