@@ -5,6 +5,27 @@
  * and open the template in the editor.
  */
 
+/**
+ * 
+ */
+function remove_menus() {
+
+//  remove_menu_page( 'index.php' );                  //Dashboard
+//  remove_menu_page( 'jetpack' );                    //Jetpack* 
+    remove_menu_page('edit.php');                   //Posts
+//  remove_menu_page( 'upload.php' );                 //Media
+//  remove_menu_page( 'edit.php?post_type=page' );    //Pages
+    remove_menu_page('edit-comments.php');          //Comments
+//  remove_menu_page( 'themes.php' );                 //Appearance
+//  remove_menu_page( 'plugins.php' );                //Plugins
+//  remove_menu_page( 'users.php' );                  //Users
+//  remove_menu_page( 'tools.php' );                  //Tools
+//  remove_menu_page( 'options-general.php' );        //Settings
+    
+}
+
+add_action('admin_menu', 'remove_menus');
+
 function mmgv_form_init() {
     register_setting('mmgv_options', 'mmgv_facebook');
     register_setting('mmgv_options', 'mmgv_twitter');
@@ -16,7 +37,7 @@ add_action('admin_init', 'mmgv_form_init');
 function mmgv_form_cliente_conf_list() {
     ?>
     <div class="wrap">
-        <?php screen_icon(); ?>
+    <?php screen_icon(); ?>
         <h2>Informações gerais para o site</h2>
         <br/>
 
@@ -24,7 +45,7 @@ function mmgv_form_cliente_conf_list() {
 
         <form action="options.php" method="post" id="form_senha_cliente">
 
-            <?php settings_fields('mmgv_options') ?>
+    <?php settings_fields('mmgv_options') ?>
 
             <p><label for="mmgv_facebook" >Facebook</label></p>
             <p>
@@ -64,6 +85,4 @@ function mmgv_config_pass() {
 }
 
 add_action('admin_menu', 'mmgv_config_pass');
-add_action('admin_menu', 'mmgv_config_pass');
-add_action('admin_menu', 'mmgv_config_pass');
-add_action('admin_menu', 'mmgv_config_pass');
+

@@ -22,32 +22,14 @@ register_nav_menus(array(
     'primary' => __('Menu principal', 'Rede-abrolhos'),
 ));
 
-/**
- * 
- */
-function remove_menus() {
 
-//  remove_menu_page( 'index.php' );                  //Dashboard
-//  remove_menu_page( 'jetpack' );                    //Jetpack* 
-    remove_menu_page('edit.php');                   //Posts
-//  remove_menu_page( 'upload.php' );                 //Media
-//  remove_menu_page( 'edit.php?post_type=page' );    //Pages
-//  remove_menu_page( 'edit-comments.php' );          //Comments
-//  remove_menu_page( 'themes.php' );                 //Appearance
-//  remove_menu_page( 'plugins.php' );                //Plugins
-//  remove_menu_page( 'users.php' );                  //Users
-//  remove_menu_page( 'tools.php' );                  //Tools
-//  remove_menu_page( 'options-general.php' );        //Settings
-}
-
-add_action('admin_menu', 'remove_menus');
 
 
 /**
  * 
  */
 add_image_size('thumb-noticia', 570, 345, true);
-add_image_size('vitrine-noticia', 1440, 570, true);
+add_image_size('vitrine-noticia', 1920, '', true);
 
 add_image_size('thumb-equipe', 160, 190, true);
 add_image_size('interno-equipe', 200, 235, true);

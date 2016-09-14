@@ -1,9 +1,7 @@
 /*
 Theme Name: rede-abrolhos
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Ohlis & Mamangava
+Description: Tema criado pela Mamangava, de acordo com as funcionalidades e layout definido pela OHLIS.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -6814,6 +6812,9 @@ input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.caret {
+  display: none;
+}
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
@@ -7113,9 +7114,10 @@ p {
   font-size: 1.733rem;
   line-height: 17.33px;
   border-radius: 0;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 23px;
   line-height: 21px;
+  padding-bottom: 8px;
 }
 .btn-saiba-mais:focus,
 .btn-saiba-mais:active:focus,
@@ -7204,6 +7206,12 @@ fieldset[disabled] .btn-saiba-mais.focus {
   color: #7fcb44;
   background-color: #f9f9f9;
 }
+.btn-saiba-mais:hover,
+.btn-saiba-mais:active,
+.btn-saiba-mais:focus {
+  background-color: #006d46;
+  border-color: #006d46;
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -7241,6 +7249,9 @@ fieldset[disabled] .btn-saiba-mais.focus {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.verde {
+  color: #7fcb44 !important;
+}
 #menu-principal {
   background-color: #ffffff;
 }
@@ -7249,7 +7260,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
   font-size: 2.2rem;
   color: #6f6f6e;
   font-size: 21px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 #menu-principal .search {
   font-size: 21px;
@@ -7363,24 +7374,34 @@ fieldset[disabled] .btn-saiba-mais.focus {
   border: 0;
   box-sizing: initial;
   border-radius: 0;
-  background: rgba(0, 109, 70, 0.9);
+  background: #7fcb44;
   padding-top: 0;
   padding-bottom: 0!important;
-  margin-top: 21px;
+  margin-top: 20px;
+}
+#menu-principal .navbar-nav > li > .dropdown-menu li {
+  padding-top: 0px !important;
+  padding-bottom: 17px !important;
+}
+#menu-principal .navbar-nav > li > .dropdown-menu li:first-of-type {
+  padding-top: 12px !important;
+}
+#menu-principal .navbar-nav > li > .dropdown-menu li:last-of-type {
+  padding-bottom: 11px !important;
 }
 #menu-principal .navbar-nav > li > .dropdown-menu a {
   color: #ffffff !important;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
-  padding-top: 0px;
-  padding-bottom: 25px!important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 #menu-principal .navbar-nav > li > .dropdown-menu a:first-of-type {
-  padding-top: 15px;
+  padding-top: 0px !important;
 }
 #menu-principal .navbar-nav > li > .dropdown-menu a:last-of-type {
-  padding-bottom: 15px!important;
+  padding-bottom: 0px !important;
 }
 #menu-principal .navbar-nav > li > .dropdown-menu .active a,
 #menu-principal .navbar-nav > li > .dropdown-menu .active a:hover {
@@ -7428,7 +7449,8 @@ fieldset[disabled] .btn-saiba-mais.focus {
   height: 75px !important;
 }
 #menu-principal .navbar-header .navbar-brand img {
-  height: 62px;
+  height: auto;
+  width: 107px;
 }
 @media (max-width: 991px) {
   #menu-principal .navbar-header .navbar-brand img {
@@ -7492,7 +7514,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
   width: 100%;
   margin-left: 0;
   margin-top: -36px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .carousel-indicators > li,
 .carousel-indicators > li.active {
@@ -7646,6 +7668,12 @@ fieldset[disabled] .btn-saiba-mais.focus {
   margin-top: 52px;
   margin-bottom: 52px;
   margin-bottom: 48px;
+  /*        padding-top: 52px;
+                margin-top: -52px;
+                
+                &:first-of-type{
+                    padding-top: 104px;
+                }*/
 }
 #rede h2 {
   color: #7fcb44;
@@ -7692,9 +7720,10 @@ fieldset[disabled] .btn-saiba-mais.focus {
   font-size: 1.733rem;
   line-height: 17.33px;
   border-radius: 0;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 23px;
   line-height: 21px;
+  padding-bottom: 8px;
   margin-top: 55px;
   margin-bottom: 33px;
 }
@@ -7785,6 +7814,12 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   color: #7fcb44;
   background-color: #f9f9f9;
 }
+#rede a.btn-saiba-mais:hover,
+#rede a.btn-saiba-mais:active,
+#rede a.btn-saiba-mais:focus {
+  background-color: #006d46;
+  border-color: #006d46;
+}
 #rede ol,
 #rede ul {
   padding-left: 0px;
@@ -7803,7 +7838,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 }
 #rede ol li:last-of-type,
 #rede ul li:last-of-type {
-  padding-bottom: 6px;
+  padding-bottom: 28px;
 }
 #rede ol li span,
 #rede ul li span {
@@ -8053,7 +8088,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   font-weight: 400;
   margin-top: 52px;
   margin-bottom: 52px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 #equipe h2 {
   color: #006d46;
@@ -8069,7 +8104,7 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   margin-bottom: 23px;
 }
 #equipe .ajuste-h2 {
-  margin-top: 24px;
+  margin-top: 21px;
 }
 #equipe p {
   color: #6f6f6e;
@@ -8096,7 +8131,8 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   background-color: #ffffff;
   margin-bottom: 30px;
   padding: 30px;
-  min-height: 480px;
+  padding-bottom: 0;
+  min-height: 444px;
 }
 #equipe .card-equipe img {
   display: block;
@@ -8109,10 +8145,14 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 #equipe .card-equipe .card-equipe-principal .card-equipe-principal-foto {
   float: left;
 }
+#equipe .card-equipe .card-equipe-principal .card-equipe-principal-foto img {
+  border: 1px solid #eeeeee;
+  border-bottom: 0;
+}
 #equipe .card-equipe .card-equipe-principal .card-equipe-principal-texto {
   float: left;
   margin-left: 20px;
-  width: 50%;
+  width: 55%;
   position: relative;
   height: 190px;
 }
@@ -8687,21 +8727,21 @@ footer .footer-global .footer-global-normal {
   height: 100%;
   padding-top: 0px;
   width: 20%;
-  padding: 45px 0px 0;
+  padding: 42px 0px 43px;
 }
 footer .footer-global .footer-global-sombra {
   display: table-cell;
   height: 100%;
   width: 22%;
   background: url('image/footer/shadow.png') no-repeat;
-  padding: 45px 0 45px 100px;
+  padding: 42px 0 43px 100px;
 }
 footer .footer-global .footer-global-peq {
   display: table-cell;
   height: 100%;
   padding-top: 0px;
   width: 15%;
-  padding: 45px 15px;
+  padding: 42px 15px 43px;
 }
 footer .footer-global .footer-global-resto {
   display: table-cell;
@@ -8752,6 +8792,7 @@ footer h3 {
   font-weight: bold;
   line-height: 1.5;
   text-transform: uppercase;
+  padding-bottom: 22px;
 }
 footer p,
 footer a {
@@ -8759,19 +8800,33 @@ footer a {
   font-size: 1.8rem;
   color: #f9f9f9;
   line-height: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 9px;
 }
 footer p img,
 footer a img {
-  width: 35px;
-  height: auto;
+  width: auto;
   padding-right: 5px;
+}
+footer p img.f,
+footer a img.f {
+  height: 33px;
+}
+footer p img.y,
+footer a img.y {
+  height: 27px;
+}
+footer p img.t,
+footer a img.t {
+  height: 34px;
 }
 footer a {
   cursor: pointer;
 }
 footer a:hover {
   text-decoration: none;
+}
+footer a.link-social p {
+  font-weight: 600;
 }
 footer #faxa-verde-bottom {
   background-color: #006d46;
@@ -8812,4 +8867,77 @@ footer #faxa-verde-bottom {
 }
 .fbx-count {
   display: none!important;
+}
+/*--------------------------------------------------------------
+## NNG GALLERY
+--------------------------------------------------------------*/
+.slideshowlink {
+  display: none;
+}
+.ngg-gallery-thumbnail {
+  text-align: center;
+  max-width: 100% !important;
+  background-color: transparent !important;
+  border: 0!important;
+  margin: 0!important;
+  margin-right: 10px!important;
+  margin-bottom: 10px!important;
+}
+@media (min-width: 1200px) {
+  .ngg-gallery-thumbnail-box:nth-child(5) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(9) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(13) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(17) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(21) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(30) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(35) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(40) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(45) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(50) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(55) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(60) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(65) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(70) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(75) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(80) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(85) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(90) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(95) .ngg-gallery-thumbnail,
+  .ngg-gallery-thumbnail-box:nth-child(100) .ngg-gallery-thumbnail {
+    margin-right: 0px!important;
+  }
+}
+.ngg-gallery-thumbnail a {
+  display: block;
+  margin: 0!important;
+  border: 0!important;
+  box-shadow: none;
+}
+#fancybox-overlay {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+#fancybox-close {
+  display: none;
+  background: none !important;
+}
+#fancybox-right-ico {
+  display: none !important;
+}
+#fancybox-left-ico {
+  display: none !important;
+}
+#fancybox-title {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  margin: 0!important;
+  padding: 10px 5px !important;
+  width: 100% !important;
+  color: white !important;
+}
+.fancybox-title-inside {
+  text-align: left !important;
+}
+#fancybox-content {
+  border-width: 0 !important;
+  width: 100% !important;
+  height: auto !important;
 }

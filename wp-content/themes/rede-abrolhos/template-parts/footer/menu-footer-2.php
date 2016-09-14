@@ -11,14 +11,14 @@
                     <div class="footer-global-normal">
 
                         <h3>Siga</h3>
-                        <a target="_blank" href="<?php echo esc_attr(get_option('mmgv_facebook')); ?>">
-                            <p><img src="<?php echo get_template_directory_uri() ?>/image/social/facebook.png"> Facebook</p>
+                        <a  class="link-social" target="_blank" href="<?php echo esc_attr(get_option('mmgv_facebook')); ?>">
+                            <p><img  class="f" src="<?php echo get_template_directory_uri() ?>/image/footer/facebook.png"> Facebook</p>
                         </a>
-                        <a target="_blank" href="<?php echo esc_attr(get_option('mmgv_youtube')); ?>">
-                            <p><img src="<?php echo get_template_directory_uri() ?>/image/social/youtube.png"> Youtube</p>
+                        <a class="link-social" target="_blank" href="<?php echo esc_attr(get_option('mmgv_youtube')); ?>">
+                            <p><img  class="y" src="<?php echo get_template_directory_uri() ?>/image/footer/youtube.png"> Youtube</p>
                         </a>
-                        <a target="_blank" href="<?php echo esc_attr(get_option('mmgv_twitter')); ?>">
-                            <p><img src="<?php echo get_template_directory_uri() ?>/image/social/twitter.png"> Twitter</p>
+                        <a class="link-social" target="_blank" href="<?php echo esc_attr(get_option('mmgv_twitter')); ?>">
+                            <p><img  class="t" src="<?php echo get_template_directory_uri() ?>/image/footer/twitter.png"> Twitter</p>
                         </a>
 
                     </div>

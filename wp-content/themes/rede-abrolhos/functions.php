@@ -60,11 +60,7 @@ if (!function_exists('rede_abrolhos_setup')) :
             'caption',
         ));
 
-        // Set up the WordPress core custom background feature.
-        add_theme_support('custom-background', apply_filters('rede_abrolhos_custom_background_args', array(
-            'default-color' => 'ffffff',
-            'default-image' => '',
-        )));
+
     }
 
 endif;
