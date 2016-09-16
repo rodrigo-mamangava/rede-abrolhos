@@ -27,14 +27,19 @@ get_header('modal');
                                             </div>
                                             <div class="info">
                                                 <h1><?php echo get_the_title(); ?></h1>
-                                                <h2>Coordenador</h2>
+                                                <?php
+                                                if (has_term('coordenadores', 'cargo')) {
+                                                    echo "<h2>Coordenador</h2>";
+                                                }
+                                                ?>
+                                                
                                                 <div class="caixa-texto">
                                                     <div class="texto">
                                                         <?php echo get_field("descricao_principal") ?>
                                                     </div>
                                                 </div>
                                                 <div class="links">
-                                                    <a  target="_blank" href="<?php echo get_field("link_lattes") ?>" >link CV Latter</a>
+                                                    <a  target="_blank" href="<?php echo get_field("link_lattes") ?>" >link CV Lattes</a>
                                                     <p><?php echo get_field("email") ?></p>                                        
                                                 </div>
                                             </div>

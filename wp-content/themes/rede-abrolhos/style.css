@@ -6995,6 +6995,7 @@ p {
   line-height: 43px;
   font-weight: 600;
   margin-bottom: 30px;
+  text-transform: initial;
 }
 .unica figure.aligncenter {
   margin-bottom: 0;
