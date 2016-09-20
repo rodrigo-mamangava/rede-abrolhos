@@ -1152,7 +1152,7 @@ p{
 
                 color: @cinza-texto;
                 position: absolute;
-                bottom: 1px;
+                bottom: 18px;
 
                 @media (max-width: @screen-xs-max){
                     position: relative;
@@ -1388,9 +1388,20 @@ p{
 
 
 
+
                 .caixa-texto{
                     position: relative;
-                    min-height: 135px;
+                    min-height: 235px;
+                    width: 100%;
+
+/*                    .titulo-single-equipe{
+
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                        width: 500px;
+
+                    }*/
 
                     .texto{
                         position: absolute;
@@ -1407,16 +1418,18 @@ p{
                     font-size: 30px;
                     line-height: 37px;
                     font-weight: 600;
+                    text-transform: initial;
+
+                    left: 0;
+                    width: 500px;
                     margin: 0;
                     padding: 0;
-                    margin-bottom: 7px;
-                    text-transform: initial;
+
                 }
                 h2{
                     .sub-titulo;
-                    margin: 0;
-                    padding: 0;
-                    margin-bottom: 23px;
+                    width: 500px;
+                    padding-bottom: 0;
                 }
 
                 p{
@@ -1424,6 +1437,10 @@ p{
                     font-size: 20px;
                     line-height: 29px;
                     font-weight: 400;
+                    
+                    &:first-of-type{
+                        padding-top: 18px;
+                    }
 
                 }
 
@@ -2127,13 +2144,13 @@ footer{
     background-color: transparent !important;
     border: 0!important;
     margin: 0!important;
-    margin-right: 10px!important;
-    margin-bottom: 10px!important;
+    margin-right: 8px!important;
+    margin-bottom: 8px!important;
 
 }
 
 
-@media (min-width: @screen-lg-min){ 
+/*@media (min-width: @screen-lg-min){ 
 
     .ngg-gallery-thumbnail-box:nth-child(5),
     .ngg-gallery-thumbnail-box:nth-child(9),
@@ -2168,7 +2185,7 @@ footer{
 
 
 
-}
+}*/
 
 
 

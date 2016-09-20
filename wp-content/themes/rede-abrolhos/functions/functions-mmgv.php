@@ -29,7 +29,7 @@ register_nav_menus(array(
  * 
  */
 add_image_size('thumb-noticia', 570, 345, true);
-add_image_size('vitrine-noticia', 1920, '', true);
+add_image_size('vitrine-noticia', 1920, 570, true);
 
 add_image_size('thumb-equipe', 160, 190, true);
 add_image_size('interno-equipe', 200, 235, true);
@@ -270,11 +270,11 @@ function get_page_name() {
 
 function limit_posts_per_archive_page() {
 
-    if (is_post_type_archive('noticias'))
+    if (is_post_type_archive('noticias') &&  !is_admin())
         $limit = 4;
-    elseif (is_post_type_archive('divulgacao-midia'))
+    elseif (is_post_type_archive('divulgacao-midia') &&  !is_admin() )
         $limit = 5;
-    elseif (is_post_type_archive('equipe'))
+    elseif (is_post_type_archive('equipe') &&  !is_admin() )
         $limit = 999;
     else
         $limit = get_option('posts_per_page');

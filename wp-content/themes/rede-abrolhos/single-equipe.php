@@ -26,15 +26,23 @@ get_header('modal');
                                                 <img class="img-responsive" src="<?php the_post_thumbnail_url('interna-equipe'); ?>" alt="<?php echo get_the_title(); ?>">  
                                             </div>
                                             <div class="info">
-                                                <h1><?php echo get_the_title(); ?></h1>
-                                                <?php
-                                                if (has_term('coordenadores', 'cargo')) {
-                                                    echo "<h2>Coordenador</h2>";
-                                                }
-                                                ?>
-                                                
+
                                                 <div class="caixa-texto">
+
+   
+
                                                     <div class="texto">
+
+
+                                                        <div class="titulo-single-equipe">
+                                                            <h1><?php echo get_the_title(); ?></h1>
+                                                            <?php
+                                                            if (has_term('coordenadores', 'cargo')) {
+                                                                echo "<h2>Coordenador</h2>";
+                                                            }
+                                                            ?>
+                                                        </div>
+
                                                         <?php echo get_field("descricao_principal") ?>
                                                     </div>
                                                 </div>

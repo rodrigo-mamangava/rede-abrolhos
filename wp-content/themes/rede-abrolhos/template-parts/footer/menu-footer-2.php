@@ -61,7 +61,7 @@
 
                     <div class="footer-global-peq">
 
-                        <h3>Eixo Temático</h3>
+                        <h3>Eixos Temáticos</h3>
                         <a>
                             <h3>Notícias</h3>
                         </a>

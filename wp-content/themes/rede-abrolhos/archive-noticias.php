@@ -33,7 +33,7 @@ get_header();
                                 </div>
                                 <div  class="col-sm-6">
                                     <div class="card-noticia-texto">
-                                        <h2><?php echo the_titlesmall('', '', false, 63)?></h2>
+                                        <h2><?php echo the_titlesmall('', '', false, 120)?></h2>
                                         <p>
                                             <?php echo get_excerpt(180); ?>
                                         </p>
