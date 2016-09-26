@@ -76,6 +76,10 @@ a{
     }
 }
 
+a:visited {
+    color: white !important;
+}
+
 
 .navbar-brand {
     padding: 0px; /* firefox bug fix */
@@ -322,6 +326,15 @@ p{
             border-top: solid 7px @verde-claro;
         }
 
+    }
+
+    img{
+        .img-responsive;
+        
+        &.aligncenter{
+            border-top: solid 7px @verde-claro;
+        }
+       
     }
 
     .wp-caption-text{
@@ -712,9 +725,11 @@ p{
             img{
                 height: auto;
                 width: 107px;
+                padding-top: 4px;
 
                 @media (max-width: @screen-sm-max){
                     height: 45px;
+                    width: auto;
                     margin-top: -5px;
                 }
             }
@@ -773,6 +788,7 @@ p{
             line-height: 40px;
             font-weight: 600;
             margin-top: -102px;
+            text-shadow: -1px 5px 10px black;
         }
 
     }
@@ -854,6 +870,13 @@ p{
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.page{
+
+
+
+
+}
+
 /*--------------------------------------------------------------
 ### Home
 --------------------------------------------------------------*/
@@ -1002,6 +1025,63 @@ p{
 }
 .footer-a-rede{
     margin-top: 55px;
+}
+/*--------------------------------------------------------------
+### eixos
+--------------------------------------------------------------*/
+#eixos{
+
+    h1{
+        .titulo;
+        margin-bottom: 48px;
+
+        /*        padding-top: 52px;
+                margin-top: -52px;
+                
+                &:first-of-type{
+                    padding-top: 104px;
+                }*/
+    }
+    h2{
+        .sub-titulo;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    p{
+        .texto-corrido;
+    }
+
+    a.btn-saiba-mais{
+        .btn-saiba-mais;
+        margin-top: 55px; 
+        margin-bottom: 33px;                 
+    }
+
+
+    ol, ul{
+        padding-left: 0px;
+        margin-left: 22px;
+
+        li{
+            .texto-corrido;
+            font-weight: 600;
+            color: @verde-claro;
+            padding-bottom: 37px;
+
+            &:last-of-type{
+                padding-bottom: 28px;
+            }
+
+            span { 
+                color: @cinza-texto; 
+                font-weight: 400;
+            }
+        }
+    }
+
+    img{
+
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1394,14 +1474,14 @@ p{
                     min-height: 235px;
                     width: 100%;
 
-/*                    .titulo-single-equipe{
-
-                        position: absolute;
-                        bottom: 0px;
-                        left: 0;
-                        width: 500px;
-
-                    }*/
+                    /*                    .titulo-single-equipe{
+                    
+                                            position: absolute;
+                                            bottom: 0px;
+                                            left: 0;
+                                            width: 500px;
+                    
+                                        }*/
 
                     .texto{
                         position: absolute;
@@ -1437,7 +1517,7 @@ p{
                     font-size: 20px;
                     line-height: 29px;
                     font-weight: 400;
-                    
+
                     &:first-of-type{
                         padding-top: 18px;
                     }
@@ -1835,6 +1915,9 @@ p{
     img.aligncenter{
         border-top: solid 7px @verde-claro;
     }
+    .aligncenter{
+        border-top: solid 7px @verde-claro;
+    }
 
     .foogallery-container{
         margin-top: 54px;
@@ -1968,11 +2051,12 @@ footer{
             padding: @distacia-top 0 43px 100px;
         }
 
+
         .footer-global-peq{
             display: table-cell;
             height: 100%;
             padding-top: 0px;
-            width: 15%;
+            width: 16%;
             padding: @distacia-top 15px 43px;
         }
 

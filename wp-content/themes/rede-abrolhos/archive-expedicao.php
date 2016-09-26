@@ -15,7 +15,7 @@ get_header();
         <div class="row">
 
             <div class="faixa">
-                <img src="<?php echo get_template_directory_uri() ?>/image/expedicoes/home-01.jpg" class="img-responsive">
+                <img src="<?php echo get_template_directory_uri() ?>/image/expedicoes/home_expedicoes1920x622px.jpg" class="img-responsive">
             </div>
         </div>
 

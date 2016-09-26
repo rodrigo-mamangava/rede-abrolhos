@@ -6796,6 +6796,9 @@ a {
 a:hover {
   text-decoration: none !important;
 }
+a:visited {
+  color: white !important;
+}
 .navbar-brand {
   padding: 0px;
   /* firefox bug fix */
@@ -7004,6 +7007,14 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+  border-top: solid 7px #7fcb44;
+}
+.unica img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.unica img.aligncenter {
   border-top: solid 7px #7fcb44;
 }
 .unica .wp-caption-text {
@@ -7452,10 +7463,12 @@ fieldset[disabled] .btn-saiba-mais.focus {
 #menu-principal .navbar-header .navbar-brand img {
   height: auto;
   width: 107px;
+  padding-top: 4px;
 }
 @media (max-width: 991px) {
   #menu-principal .navbar-header .navbar-brand img {
     height: 45px;
+    width: auto;
     margin-top: -5px;
   }
 }
@@ -7505,6 +7518,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
   line-height: 40px;
   font-weight: 600;
   margin-top: -102px;
+  text-shadow: -1px 5px 10px black;
 }
 .carousel-inner {
   margin-bottom: -1px;
@@ -7853,6 +7867,196 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 }
 .footer-a-rede {
   margin-top: 55px;
+}
+/*--------------------------------------------------------------
+### eixos
+--------------------------------------------------------------*/
+#eixos h1 {
+  color: #006d46;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  margin-bottom: 48px;
+  /*        padding-top: 52px;
+                margin-top: -52px;
+                
+                &:first-of-type{
+                    padding-top: 104px;
+                }*/
+}
+#eixos h2 {
+  color: #7fcb44;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#eixos p {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 400;
+}
+#eixos a.btn-saiba-mais {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #f9f9f9;
+  background-color: #7fcb44;
+  border-color: #7fcb44;
+  padding: 5px 7px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 17.33px;
+  font-size: 1.733rem;
+  line-height: 17.33px;
+  border-radius: 0;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 21px;
+  padding-bottom: 8px;
+  margin-top: 55px;
+  margin-bottom: 33px;
+}
+#eixos a.btn-saiba-mais:focus,
+#eixos a.btn-saiba-mais:active:focus,
+#eixos a.btn-saiba-mais.active:focus,
+#eixos a.btn-saiba-mais.focus,
+#eixos a.btn-saiba-mais:active.focus,
+#eixos a.btn-saiba-mais.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#eixos a.btn-saiba-mais:hover,
+#eixos a.btn-saiba-mais:focus,
+#eixos a.btn-saiba-mais.focus {
+  color: #333333;
+  text-decoration: none;
+}
+#eixos a.btn-saiba-mais:active,
+#eixos a.btn-saiba-mais.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#eixos a.btn-saiba-mais.disabled,
+#eixos a.btn-saiba-mais[disabled],
+fieldset[disabled] #eixos a.btn-saiba-mais {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a#eixos a.btn-saiba-mais.disabled,
+fieldset[disabled] a#eixos a.btn-saiba-mais {
+  pointer-events: none;
+}
+#eixos a.btn-saiba-mais:focus,
+#eixos a.btn-saiba-mais.focus {
+  color: #f9f9f9;
+  background-color: #66ac30;
+  border-color: #43701f;
+}
+#eixos a.btn-saiba-mais:hover {
+  color: #f9f9f9;
+  background-color: #66ac30;
+  border-color: #61a42e;
+}
+#eixos a.btn-saiba-mais:active,
+#eixos a.btn-saiba-mais.active,
+.open > .dropdown-toggle#eixos a.btn-saiba-mais {
+  color: #f9f9f9;
+  background-color: #66ac30;
+  border-color: #61a42e;
+}
+#eixos a.btn-saiba-mais:active:hover,
+#eixos a.btn-saiba-mais.active:hover,
+.open > .dropdown-toggle#eixos a.btn-saiba-mais:hover,
+#eixos a.btn-saiba-mais:active:focus,
+#eixos a.btn-saiba-mais.active:focus,
+.open > .dropdown-toggle#eixos a.btn-saiba-mais:focus,
+#eixos a.btn-saiba-mais:active.focus,
+#eixos a.btn-saiba-mais.active.focus,
+.open > .dropdown-toggle#eixos a.btn-saiba-mais.focus {
+  color: #f9f9f9;
+  background-color: #569028;
+  border-color: #43701f;
+}
+#eixos a.btn-saiba-mais:active,
+#eixos a.btn-saiba-mais.active,
+.open > .dropdown-toggle#eixos a.btn-saiba-mais {
+  background-image: none;
+}
+#eixos a.btn-saiba-mais.disabled:hover,
+#eixos a.btn-saiba-mais[disabled]:hover,
+fieldset[disabled] #eixos a.btn-saiba-mais:hover,
+#eixos a.btn-saiba-mais.disabled:focus,
+#eixos a.btn-saiba-mais[disabled]:focus,
+fieldset[disabled] #eixos a.btn-saiba-mais:focus,
+#eixos a.btn-saiba-mais.disabled.focus,
+#eixos a.btn-saiba-mais[disabled].focus,
+fieldset[disabled] #eixos a.btn-saiba-mais.focus {
+  background-color: #7fcb44;
+  border-color: #7fcb44;
+}
+#eixos a.btn-saiba-mais .badge {
+  color: #7fcb44;
+  background-color: #f9f9f9;
+}
+#eixos a.btn-saiba-mais:hover,
+#eixos a.btn-saiba-mais:active,
+#eixos a.btn-saiba-mais:focus {
+  background-color: #006d46;
+  border-color: #006d46;
+}
+#eixos ol,
+#eixos ul {
+  padding-left: 0px;
+  margin-left: 22px;
+}
+#eixos ol li,
+#eixos ul li {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 400;
+  font-weight: 600;
+  color: #7fcb44;
+  padding-bottom: 37px;
+}
+#eixos ol li:last-of-type,
+#eixos ul li:last-of-type {
+  padding-bottom: 28px;
+}
+#eixos ol li span,
+#eixos ul li span {
+  color: #6f6f6e;
+  font-weight: 400;
 }
 /*--------------------------------------------------------------
 ### Page
@@ -8230,13 +8434,13 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
   min-height: 235px;
   width: 100%;
   /*                    .titulo-single-equipe{
-
-                        position: absolute;
-                        bottom: 0px;
-                        left: 0;
-                        width: 500px;
-
-                    }*/
+                    
+                                            position: absolute;
+                                            bottom: 0px;
+                                            left: 0;
+                                            width: 500px;
+                    
+                                        }*/
 }
 #equipe-single .header-equipe .cv-principal .info .caixa-texto .texto {
   position: absolute;
@@ -8633,6 +8837,9 @@ fieldset[disabled] #rede a.btn-saiba-mais.focus {
 #expedicao-single img.aligncenter {
   border-top: solid 7px #7fcb44;
 }
+#expedicao-single .aligncenter {
+  border-top: solid 7px #7fcb44;
+}
 #expedicao-single .foogallery-container {
   margin-top: 54px;
 }
@@ -8753,7 +8960,7 @@ footer .footer-global .footer-global-peq {
   display: table-cell;
   height: 100%;
   padding-top: 0px;
-  width: 15%;
+  width: 16%;
   padding: 42px 15px 43px;
 }
 footer .footer-global .footer-global-resto {

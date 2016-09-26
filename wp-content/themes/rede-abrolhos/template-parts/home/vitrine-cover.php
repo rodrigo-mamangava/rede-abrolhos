@@ -36,6 +36,8 @@ $countSlide = 0;
 
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
+
+
                     <div class="vitrine-cover item <?php echo ($countSlide == 0) ? 'active' : ''; ?>" style="background-image: url(<?php the_post_thumbnail_url('vitrine-noticia'); ?>)" >                        
                         <div class="carousel-texto">
                             <div class="container">
@@ -43,9 +45,11 @@ $countSlide = 0;
                                     <div class="col-xs-12">
                                         <div class="titulo-capa-wrapper">
                                             <div class="titulo-capa">
-                                                <h2 class="carousel">
-                                                    <?php echo get_the_title(); ?>
-                                                </h2>
+                                                <a href="<?php echo get_permalink(); ?>">
+                                                    <h2 class="carousel">                                                    
+                                                        <?php echo get_the_title(); ?>
+                                                    </h2>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -53,6 +57,8 @@ $countSlide = 0;
                             </div>
                         </div>
                     </div>
+
+
 
 
                     <?php $countSlide++; ?>

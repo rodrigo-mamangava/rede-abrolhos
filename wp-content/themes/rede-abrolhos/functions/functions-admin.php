@@ -21,7 +21,6 @@ function remove_menus() {
 //  remove_menu_page( 'users.php' );                  //Users
 //  remove_menu_page( 'tools.php' );                  //Tools
 //  remove_menu_page( 'options-general.php' );        //Settings
-    
 }
 
 add_action('admin_menu', 'remove_menus');
@@ -30,6 +29,8 @@ function mmgv_form_init() {
     register_setting('mmgv_options', 'mmgv_facebook');
     register_setting('mmgv_options', 'mmgv_twitter');
     register_setting('mmgv_options', 'mmgv_youtube');
+    register_setting('mmgv_options', 'endereco_linha_01');
+    register_setting('mmgv_options', 'endereco_linha_02');
 }
 
 add_action('admin_init', 'mmgv_form_init');
@@ -37,15 +38,17 @@ add_action('admin_init', 'mmgv_form_init');
 function mmgv_form_cliente_conf_list() {
     ?>
     <div class="wrap">
-    <?php screen_icon(); ?>
+        <?php screen_icon(); ?>
         <h2>Informações gerais para o site</h2>
         <br/>
 
-        <h2>Rede social</h2>
+
 
         <form action="options.php" method="post" id="form_senha_cliente">
 
-    <?php settings_fields('mmgv_options') ?>
+            <h2>Rede social</h2>
+
+            <?php settings_fields('mmgv_options') ?>
 
             <p><label for="mmgv_facebook" >Facebook</label></p>
             <p>
@@ -65,6 +68,22 @@ function mmgv_form_cliente_conf_list() {
             <p>
                 <input type="text" id="mmgv_youtube" name="mmgv_youtube" style="width: 500px;"
                        value="<?php echo esc_attr(get_option('mmgv_youtube')); ?>" />           
+            </p>
+
+
+            <h2>Endereço</h2>
+
+            <p><label for="endereco_linha_01" >Endereço - linha 01</label></p>
+            <p>
+                <input type="text" id="endereco_linha_01" name="endereco_linha_01" style="width: 500px;"
+                       value="<?php echo esc_attr(get_option('endereco_linha_01')); ?>" />           
+            </p>
+
+
+            <p><label for="endereco_linha_02" >Endereço - linha 02</label></p>
+            <p>
+                <input type="text" id="endereco_linha_02" name="endereco_linha_02" style="width: 500px;"
+                       value="<?php echo esc_attr(get_option('endereco_linha_02')); ?>" />           
             </p>
 
 
